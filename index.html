@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iksha Institute of Technologies</title>
+  <title>iksha institute of technologies</title>
   <style>
     body {
       margin: 0;
@@ -13,21 +13,28 @@
     }
 
     header {
-      background: #1a237e;
+      background: #000;
       color: #fff;
       padding: 20px 40px;
       text-align: center;
+      height: 18vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
-    header h1 {
+    header img {
+      max-width: 100%;
+      max-height: 25vh;
       margin: 0;
-      font-size: 2rem;
     }
 
     header p {
       margin: 5px 0 0;
       font-size: 0.95rem;
       opacity: 0.9;
+      display: none;
     }
 
     nav {
@@ -53,6 +60,8 @@
       max-width: 1100px;
       margin: 30px auto;
       padding: 0 20px 40px;
+      position: relative;
+      min-height: 400px;
     }
 
     section {
@@ -74,4 +83,185 @@
       margin-bottom: 15px;
     }
 
-    .btn-primary {
+    footer {
+      background: #1a237e;
+      color: #fff;
+      text-align: center;
+      padding: 15px 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    #comingsoon {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      padding: 60px 20px;
+      background: #f5f7fb;
+      border-radius: 8px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: calc(100% - 75px);
+      max-width: 1060px;
+      transform: translateX(-50%);
+      margin: 30px auto;
+      animation: zoomInOut 8s ease-in-out infinite;
+      animation-delay: -2s;
+    }
+
+    #comingsoon-text {
+      animation: multiEffect 8s infinite;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      padding: 30px 40px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    @keyframes multiEffect {
+      0% {
+        transform: scale(1) rotateZ(0deg);
+        color: #fff;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        font-size: 4rem;
+      }
+      12.5% {
+        transform: scale(1.15) rotateZ(0deg);
+        color: #ffeb3b;
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        font-size: 4.3rem;
+      }
+      25% {
+        transform: scale(1) translateX(20px) rotateZ(5deg);
+        color: #00bcd4;
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        font-size: 4rem;
+      }
+      37.5% {
+        transform: scale(0.95) rotateZ(-5deg);
+        color: #ff6b6b;
+        background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        font-size: 3.8rem;
+      }
+      50% {
+        transform: scale(1.2) rotateZ(0deg);
+        color: #7fff00;
+        background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        font-size: 4.5rem;
+      }
+      62.5% {
+        transform: scale(1) translateX(-20px) rotateZ(-5deg);
+        color: #fff;
+        background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);
+        font-size: 4rem;
+      }
+      75% {
+        transform: scale(1.1) rotateZ(3deg);
+        color: #b19cd9;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        font-size: 4.2rem;
+      }
+      87.5% {
+        transform: scale(0.9) rotateZ(-3deg);
+        color: #ffff00;
+        background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+        font-size: 3.9rem;
+      }
+      100% {
+        transform: scale(1) rotateZ(0deg);
+        color: #fff;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        font-size: 4rem;
+      }
+    }
+
+    @keyframes zoomInOut {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      20% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      80% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+    }
+
+    .feature-section {
+      animation: zoomInOut 8s ease-in-out infinite;
+      position: absolute;
+      width: calc(100% - 40px);
+      max-width: 1060px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 30px auto;
+    }
+
+    #learn-section {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      animation-delay: 0s;
+    }
+
+    #learn-section h2 {
+      color: #fff;
+      font-size: 2.5rem;
+    }
+
+    #earn-section {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      color: #fff;
+      animation-delay: 2s;
+    }
+
+    #earn-section h2 {
+      color: #fff;
+      font-size: 2.5rem;
+    }
+
+    #peace-section {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      color: #fff;
+      animation-delay: 4s;
+    }
+
+    #peace-section h2 {
+      color: #fff;
+      font-size: 2.5rem;
+    }
+
+  </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo1.png" alt="iksha institute Logo" style="max-width: 250px;">
+    </header>
+    <main>
+      <section id="comingsoon"><div id="comingsoon-text">COMING SOON</div></section>
+      <!-- <section id="learn-section" class="feature-section">
+        <h2>Learn</h2>
+        <p>Enhance your knowledge and skills with our comprehensive learning programs designed to build expertise in modern technologies and innovative practices.</p>
+      </section>
+      <section id="earn-section" class="feature-section">
+        <h2>Earn</h2>
+        <p>Create opportunities to grow your career and income through specialized training, certifications, and professional development courses.</p>
+      </section>
+      <section id="peace-section" class="feature-section">
+        <h2>Physical and Mental Peace</h2>
+        <p>Achieve balance in your life with wellness programs that promote physical health, mental well-being, and holistic development.</p>
+      </section> -->
+    </main>
+    
+  </html>
+
