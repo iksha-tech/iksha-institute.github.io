@@ -19,7 +19,7 @@
         .modules { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2%; height: 100%; }
         .module { background: white; border-radius: 12px; padding: 2em; text-align: center; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s; }
         .module:hover { transform: translateY(-10px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
-        .module h3 { margin-bottom: 1em; color: #333; }
+        .module h4 { margin-bottom: 1em; color: #333; }
 
         .footer { height: 8vh; background: #333; color: white; display: flex; align-items: center; justify-content: center; gap: 2em; flex-wrap: wrap; }
         .footer a { color: #667eea; text-decoration: none; }
@@ -160,7 +160,7 @@
             box-shadow: 0 15px 30px rgba(0,0,0,0.2);
         }
 
-        .phase-card h3 {
+        .phase-card h4 {
             font-size: 1em;
             margin-bottom: 10px;
             position: relative;
@@ -239,7 +239,7 @@
             color: #2c3e50;
         }
 
-        .contact-info h3 {
+        .contact-info h4 {
             margin-bottom: 15px;
             font-size: 1.5em;
         }
@@ -261,6 +261,58 @@
                 padding: 10px;
             }
         }
+        
+        .stock1 {
+          background: #ffffff;
+          padding: 10px;
+          border-radius: 16px;
+          color: #1f2937;
+        }
+
+        .stock1 h2 {
+          margin-bottom: 16px;
+          color: #1e40af;
+          font-size: 1.4rem;
+        }
+
+        .stock-list {
+          list-style: none;            /* remove default bullets */
+          padding: 0;
+          margin: 0;
+        }
+
+        .stock-list li {
+          position: relative;
+          margin: 8px 0;
+          padding: 10px 14px 10px 40px;
+          border-radius: 12px;
+          background: rgba(226, 232, 240, 0.6);
+          box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+          transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+          color: #1f2937;
+        }
+
+        /* Colored circular bullets */
+        .stock-list li::before {
+          content: "";
+          position: absolute;
+          left: 14px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #1e40af;
+          box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.25);
+        }
+
+        /* Hover effect */
+        .stock-list li:hover {
+          background: rgba(30, 64, 175, 0.1);
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
     </style>
 </head>
 <body>
@@ -279,32 +331,32 @@
     <main class="main">
         <div class="modules">
             <div class="module" onclick="openModal('modal1')">
-                <h3>SDLC Course</h3>
+                <h4>SDLC Course</h4>
                 <p>Master Software Development Lifecycle</p><br>
                 <p>A course for Graduates to match their skills with Industry Needs</p>
             </div>
             <div class="module" onclick="openModal('modal6')">
-                <h3>Project Work</h3>
+                <h4>Project Work</h4>
                 <p>Complete Guidance and Support</p><br>
                 <p>For Graduates looking for projects during B.E/MCA Education</p>
             </div>
             <div class="module" onclick="openModal('modal3')">
-                <h3>Learn Kannada Literature</h3>
+                <h4>Learn Kannada Literature</h4>
                 <p>For Students from Class I to X</p><br>
                 <p>An Unique Open-Ended course for Everybody</p>
             </div>
             <div class="module" onclick="openModal('modal2')">
-                <h3>Capital Markets Mastery</h3>
+                <h4>Capital Markets Mastery</h4>
                 <p>Trading, Investing & Wealth Creation</p><br>
                 <p>For people having Curiosity and Eagerness to Explore the World of Investment</p>
             </div>
             <div class="module" onclick="openModal('modal4')">
-                <h3>Financial Literacy</h3>
+                <h4>Financial Literacy</h4>
                 <p>Uncover the Possibilities to Earn</p><br>
                 <p>For people who are yet to Start Saving and Learn Money Matters</p>
             </div>
             <div class="module" onclick="openModal('modal5')">
-                <h3>Mindfulness With Yoga</h3>
+                <h4>Mindfulness With Yoga</h4>
                 <p>Experience the Benefits of Yoga</p><br>
                 <p>Kids, Young, Adults or Elders. This is for EVERYONE</p>
             </div>
@@ -335,32 +387,32 @@
                 
                 <div class="phases-container">
                     <div class="phase-card">
-                        <h3>📋 Requirements Analysis</h3>
+                        <h4>📋 Requirements Analysis</h4>
                         <p>Learn to gather, document, and analyze client requirements using industry tools and techniques</p>
                     </div>
                     
                     <div class="phase-card">
-                        <h3>🎨 System Design</h3>
+                        <h4>🎨 System Design</h4>
                         <p>Master architectural patterns, database design, and system modeling with real-world case studies</p>
                     </div>
                     
                     <div class="phase-card">
-                        <h3>💻 Development</h3>
+                        <h4>💻 Development</h4>
                         <p>Hands-on coding with modern frameworks, version control, and collaborative development practices</p>
                     </div>
                     
                     <div class="phase-card">
-                        <h3>🔧 Implementation</h3>
+                        <h4>🔧 Implementation</h4>
                         <p>Deploy applications using cloud platforms, containerization, and DevOps best practices</p>
                     </div>
                     
                     <div class="phase-card">
-                        <h3>🧪 Testing & QA</h3>
+                        <h4>🧪 Testing & QA</h4>
                         <p>Comprehensive testing strategies including unit, integration, and automated testing frameworks</p>
                     </div>
                     
                     <div class="phase-card">
-                        <h3>🚀 Deployment</h3>
+                        <h4>🚀 Deployment</h4>
                         <p>Production deployment, monitoring, and maintenance using industry-standard tools and practices</p>
                     </div>
                 </div>
@@ -409,8 +461,50 @@
     <div id="modal2" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal2')">&times;</span>
-            <h2>Data Science Course</h2>
-            <p>Full details: Python, Pandas, Scikit-learn, TensorFlow. Projects included. Fee: ₹30,000.</p>
+            <h2>Course Curriculum</h2>
+            <div id="stock1" class="stock1">
+              <ul class="stock-list">
+                <li>Introduction to the Stock Market : Understanding market structure, participants, and how trading works.</li>
+                <li>Risk &amp; Money Management : Essential principles to protect capital and maximize profits.</li>
+                <li>Candlestick Basics : Foundations of candlestick patterns and their significance.</li>
+                <li>Advanced Candlestick Secrets : Hidden insights for better market interpretation.</li>
+                <li>Reversal Patterns - I : Key candlestick signals for market reversals.</li>
+                <li>Reversal Patterns - II : Deep dive into advanced reversal formations.</li>
+                <li>Indicators &amp; Their Applications : I : Understanding key technical indicators.</li>
+                <li>Indicators &amp; Their Applications : II : Combining indicators for stronger analysis.</li>
+                <li>Trading Psychology &amp; Mind-set Mastery : Overcoming emotional biases and building discipline.</li>
+                <li>Winning Strategies &amp; Stock Selection : Proven techniques, screeners, and trade execution.</li>
+                <li>Price Action Mastery : Institutional trading secrets.</li>
+                <li>Chart Patterns &amp; Their Significance : Identifying high-probability setups.</li>
+                <li>Fibonacci Retracement : Fibonacci levels for entry and exit points.</li>
+                <li>Divergence &amp; Hidden Divergence : The secrets untold.</li>
+                <li>Introduction to Derivatives : Understanding futures and options.</li>
+                <li>Futures Trading Essentials : How futures contracts work and trading.</li>
+                <li>Options Trading Basics : Calls, puts, and how to leverage options for profits.</li>
+                <li>Reading the Option Chain : Analysing open interest, and implied volatility.</li>
+                <li>Trend Identification Using Derivative Data : Using futures and options data for market direction.</li>
+                <li>Mastering Derivative Trading : Trade derivatives with confidence.</li>
+                <li>Deep Dive into Risk &amp; Money Management Psychology : Building a rule-based trading system. Mastering emotional control &amp; decision-making.</li>
+                <li>Options Greeks Explained : Learn Delta, Theta, Vega, and Gamma.</li>
+                <li>Advanced Option Strategies : Spreads, Straddles, Strangles, and Iron Condors.</li>
+                <li>Hedging Portfolio with Derivatives : Managing risk in volatile markets.</li>
+                <li>Creating Zero-Loss (Low Risk) Strategies : Delta-neutral &amp; gamma scalping techniques.</li>
+                <li>BTST/STBT &amp; Options Trading.</li>
+                <li>Swing, Positional Trading - Combining candlesticks with key technical indicators.</li>
+              </ul>
+              
+              <div>
+                <span>
+                  <h4>🎯 Limited Seats</h4>
+                  <h4>✅ Live classes from SEBI Registered Research Analyst</h4>
+                  <h4>✅ Lifetime community access</h4>
+                  <h4>📍 Mode: Online / Offline (Live Classes)</h4>
+                  <h4>🕒 Time: 7:30 PM : 9:30 PM (Mon:Fri)</h4>
+                  <h4>💰 Fee: ₹29,999 (Incl. GST)</h4>
+                </span>
+              </div>
+
+            </div>
         </div>
     </div>
     <!-- Repeat for modal3-6 with your content -->
