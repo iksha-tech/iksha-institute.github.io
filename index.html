@@ -26,7 +26,7 @@
 
         /* Modal Styles */
         .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.5); animation: fadeIn 0.3s; }
-        .modal-content { background-color: #fefefe; margin: 10% auto; padding: 2em; border-radius: 12px; width: 80%; max-width: 600px; max-height: 80vh; overflow-y: auto; box-shadow: 0 8px 32px rgba(0,0,0,0.3); animation: slideIn 0.4s; }
+        .modal-content { background-color: #fefefe; margin: 2% auto 0; padding: 2em; border-radius: 12px; width: 90%; max-width: 900px; max-height: 80vh; overflow-y: auto; box-shadow: 0 8px 32px rgba(0,0,0,0.3); animation: slideIn 0.4s; }
         .close { color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
         .close:hover { color: black; }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
@@ -76,7 +76,7 @@
         }
 
         .highlight-box {
-            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #dc8d1f 100%);
             padding: 25px;
             border-radius: 15px;
             margin: 30px 0;
@@ -128,7 +128,7 @@
         }
 
         .phase-card {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            background: linear-gradient(135deg, #76b5ed 0%, #536ee6 100%);
             color: white;
             padding: 25px;
             border-radius: 15px;
@@ -151,6 +151,9 @@
             transition: left 0.5s;
         }
 
+        .phase-card1 {
+          font-size: small;
+        }
         .phase-card:hover::before {
             left: 100%;
         }
@@ -321,8 +324,7 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#who">Who We Are</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#mission">Mission</a></li>
             </ul>
         </nav>
@@ -379,41 +381,41 @@
         <div class="content">
             <div class="highlight-box">
                 <h2>🚀 Bridge the Gap Between Theory and Industry Practice</h2>
-                <p>Gain hands-on experience with real-world projects and industry-standard methodologies that employers demand.</p>
+                <p>Gain hands-on experience with real-world projects and industry-standard methodologies</p>
             </div>
 
             <div class="lifecycle-section">
-                <h2 class="lifecycle-title">Complete Development Lifecycle Coverage</h2>
+                <h2 class="lifecycle-title">Complete Software Development Lifecycle Coverage</h2>
                 
                 <div class="phases-container">
                     <div class="phase-card">
                         <h4>📋 Requirements Analysis</h4>
-                        <p>Learn to gather, document, and analyze client requirements using industry tools and techniques</p>
+                        <div class="phase-card1">Learn to gather, document, and analyze client requirements using industry tools and techniques</div>
                     </div>
                     
                     <div class="phase-card">
                         <h4>🎨 System Design</h4>
-                        <p>Master architectural patterns, database design, and system modeling with real-world case studies</p>
+                        <div class="phase-card1">Master architectural patterns, database design, and system modeling with real-world case studies</div>
                     </div>
                     
                     <div class="phase-card">
                         <h4>💻 Development</h4>
-                        <p>Hands-on coding with modern frameworks, version control, and collaborative development practices</p>
+                        <div class="phase-card1">Hands-on coding with modern frameworks, version control, and collaborative development practices</div>
                     </div>
                     
                     <div class="phase-card">
                         <h4>🔧 Implementation</h4>
-                        <p>Deploy applications using cloud platforms, containerization, and DevOps best practices</p>
+                        <div class="phase-card1">Deploy applications using cloud platforms, containerization, and DevOps best practices</div>
                     </div>
                     
                     <div class="phase-card">
                         <h4>🧪 Testing & QA</h4>
-                        <p>Comprehensive testing strategies including unit, integration, and automated testing frameworks</p>
+                        <div class="phase-card1">Comprehensive testing strategies including unit, integration, and automated testing frameworks</div>
                     </div>
                     
                     <div class="phase-card">
                         <h4>🚀 Deployment</h4>
-                        <p>Production deployment, monitoring, and maintenance using industry-standard tools and practices</p>
+                        <div class="phase-card1">Production deployment, monitoring, and maintenance using industry-standard tools and practices</div>
                     </div>
                 </div>
             </div>
@@ -451,8 +453,8 @@
             <div class="highlight-box">
                 <h2>💼 What Makes This Course Different?</h2>
                 <p><strong>Learn from Industry experts</strong></p>
-                <p><strong>Over 20 years of IT experience. Worked in Goldman Sachs, Morgan Stanley, J P Morgan Chase</strong></p> 
-                <p><strong>100% Practical Focus:</strong>You'll graduate with a portfolio of completed applications and the confidence to tackle any development project.</p>
+                <p>Over 20 years of IT experience</p> 
+                <p><strong>100% Practical Focus:</strong>You'll graduate with a knowledge of end-to-end application development.</p>
             </div>
         </div>
     </div>
@@ -461,36 +463,36 @@
     <div id="modal2" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal2')">&times;</span>
-            <h2>Course Curriculum</h2>
+            <div class="highlight-box" >Course Curriculum</div>
             <div id="stock1" class="stock1">
               <ul class="stock-list">
-                <li>Introduction to the Stock Market : Understanding market structure, participants, and how trading works.</li>
-                <li>Risk &amp; Money Management : Essential principles to protect capital and maximize profits.</li>
-                <li>Candlestick Basics : Foundations of candlestick patterns and their significance.</li>
-                <li>Advanced Candlestick Secrets : Hidden insights for better market interpretation.</li>
-                <li>Reversal Patterns - I : Key candlestick signals for market reversals.</li>
-                <li>Reversal Patterns - II : Deep dive into advanced reversal formations.</li>
-                <li>Indicators &amp; Their Applications : I : Understanding key technical indicators.</li>
-                <li>Indicators &amp; Their Applications : II : Combining indicators for stronger analysis.</li>
-                <li>Trading Psychology &amp; Mind-set Mastery : Overcoming emotional biases and building discipline.</li>
-                <li>Winning Strategies &amp; Stock Selection : Proven techniques, screeners, and trade execution.</li>
-                <li>Price Action Mastery : Institutional trading secrets.</li>
-                <li>Chart Patterns &amp; Their Significance : Identifying high-probability setups.</li>
-                <li>Fibonacci Retracement : Fibonacci levels for entry and exit points.</li>
-                <li>Divergence &amp; Hidden Divergence : The secrets untold.</li>
-                <li>Introduction to Derivatives : Understanding futures and options.</li>
-                <li>Futures Trading Essentials : How futures contracts work and trading.</li>
-                <li>Options Trading Basics : Calls, puts, and how to leverage options for profits.</li>
-                <li>Reading the Option Chain : Analysing open interest, and implied volatility.</li>
-                <li>Trend Identification Using Derivative Data : Using futures and options data for market direction.</li>
-                <li>Mastering Derivative Trading : Trade derivatives with confidence.</li>
-                <li>Deep Dive into Risk &amp; Money Management Psychology : Building a rule-based trading system. Mastering emotional control &amp; decision-making.</li>
-                <li>Options Greeks Explained : Learn Delta, Theta, Vega, and Gamma.</li>
-                <li>Advanced Option Strategies : Spreads, Straddles, Strangles, and Iron Condors.</li>
-                <li>Hedging Portfolio with Derivatives : Managing risk in volatile markets.</li>
-                <li>Creating Zero-Loss (Low Risk) Strategies : Delta-neutral &amp; gamma scalping techniques.</li>
-                <li>BTST/STBT &amp; Options Trading.</li>
-                <li>Swing, Positional Trading - Combining candlesticks with key technical indicators.</li>
+                <li><b>Introduction to the Stock Market</b> : Understanding market structure, participants, and how trading works.</li>
+                <li><b>Risk &amp; Money Management</b> : Essential principles to protect capital and maximize profits.</li>
+                <li><b>Candlestick Basics</b> : Foundations of candlestick patterns and their significance.</li>
+                <li><b>Advanced Candlestick Secrets</b> : Hidden insights for better market interpretation.</li>
+                <li><b>Reversal Patterns - I</b> : Key candlestick signals for market reversals.</li>
+                <li><b>Reversal Patterns - II</b> : Deep dive into advanced reversal formations.</li>
+                <li><b>Indicators &amp; Their Applications : I</b> : Understanding key technical indicators.</li>
+                <li><b>Indicators &amp; Their Applications : II</b> : Combining indicators for stronger analysis.</li>
+                <li><b>Trading Psychology &amp; Mind-set Mastery</b> : Overcoming emotional biases and building discipline.</li>
+                <li><b>Winning Strategies &amp; Stock Selection</b> : Proven techniques, screeners, and trade execution.</li>
+                <li><b>Price Action Mastery</b> : Institutional trading secrets.</li>
+                <li><b>Chart Patterns &amp; Their Significance</b> : Identifying high-probability setups.</li>
+                <li><b>Fibonacci Retracement</b> : Fibonacci levels for entry and exit points.</li>
+                <li><b>Divergence &amp; Hidden Divergence</b> : The secrets untold.</li>
+                <li><b>Introduction to Derivatives</b> : Understanding futures and options.</li>
+                <li><b>Futures Trading Essentials</b> : How futures contracts work and trading.</li>
+                <li><b>Options Trading Basics</b> : Calls, puts, and how to leverage options for profits.</li>
+                <li><b>Reading the Option Chain</b> : Analysing open interest, and implied volatility.</li>
+                <li><b>Trend Identification Using Derivative Data</b> : Using futures and options data for market direction.</li>
+                <li><b>Mastering Derivative Trading</b> : Trade derivatives with confidence.</li>
+                <li><b>Deep Dive into Risk &amp; Money Management Psychology</b> : Building a rule-based trading system. Mastering emotional control &amp; decision-making.</li>
+                <li><b>Options Greeks Explained</b> : Learn Delta, Theta, Vega, and Gamma.</li>
+                <li><b>Advanced Option Strategies</b> : Spreads, Straddles, Strangles, and Iron Condors.</li>
+                <li><b>Hedging Portfolio with Derivatives</b> : Managing risk in volatile markets.</li>
+                <li><b>Creating Zero-Loss (Low Risk) Strategies</b> : Delta-neutral &amp; gamma scalping techniques.</li>
+                <li><b>BTST/STBT &amp; Options Trading</b>.</li>
+                <li><b>Swing, Positional Trading</b> - Combining candlesticks with key technical indicators.</li>
               </ul>
               
               <div>
