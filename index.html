@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iksha institute of technologies</title>
     <style>
+        @import url(http://fonts.googleapis.com/earlyaccess/notosanskannada.css);
+        body {
+            font-family: "Noto Sans Kannada", sans-serif;
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html, body { height: 100%; font-family: Arial, sans-serif; }
         body { display: flex; flex-direction: column; }
@@ -343,9 +347,10 @@
                 <p>For Graduates looking for projects during B.E/MCA Education</p>
             </div>
             <div class="module" onclick="openModal('modal3')">
-                <h4>Learn Kannada Literature</h4>
-                <p>For Students from Class I to X</p><br>
-                <p>An Unique Open-Ended course for Everybody</p>
+                <h4>ಕನ್ನಡ ಜಾಗರೂಕತೆ</h4>
+                <h4>ಕನ್ನಡ ಸಾಹಿತ್ಯ ಹಾಗೂ ಇತಿಹಾಸ ಜಾಗರೂಕತೆ ಒಂದು ಪ್ರಯತ್ನ</h4>
+              
+                <p>An Awareness Session on Kannada History and Literature</p>
             </div>
             <div class="module" onclick="openModal('modal2')">
                 <h4>Capital Markets Mastery</h4>
@@ -354,7 +359,7 @@
             </div>
             <div class="module" onclick="openModal('modal4')">
                 <h4>Financial Literacy</h4>
-                <p>Uncover the Possibilities to Earn</p><br>
+                <p>A Crash Course on Finances</p><br>
                 <p>For people who are yet to Start Saving and Learn Money Matters</p>
             </div>
             <div class="module" onclick="openModal('modal5')">
@@ -367,9 +372,11 @@
     </main>
 
     <footer class="footer">
-        <span>Contact: iksha.institute.of.technologies@gmail.com | +91 99009 28972</span>
+        <span><a href="#" onclick="openTermsPopup(); return false;" style="color: #667eea; text-decoration: none; cursor: pointer;">Privacy & Terms</a></span>
+        <span><a href="#" onclick="openContactUsPopup(); return false;" style="color: #667eea; text-decoration: none; cursor: pointer;">Contact Us</a></span>
+        <!-- <span>Contact: iksha.institute.of.technologies@gmail.com | +91 99009 28972</span>
         <span><a href="https://www.instagram.com/iksha.tech">Instagram</a></span>
-        <a href="mailto:iksha.institute.of.technologies@gmail.com">Email Us</a>
+        <a href="mailto:iksha.institute.of.technologies@gmail.com">Email Us</a> -->
     </footer>
 
     <!-- Modals (add more as needed; customize content) -->
@@ -508,9 +515,62 @@
             </div>
         </div>
     </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <div class="highlight-box" >Projects For Final Sem B.E / MCA Graduates</div>
+            <div id="stock1" class="stock1">
+              <ul class="stock-list">
+                <li><b>Project Guidance</b> : We Guide and Support for your Final Semester Project Work.</li>
+                <li><b>End to End Support</b> : Complete project development from idea to implementation.</li>
+                <li><b>Choose Your Own</b> : Choose your own project domain and work on it with our guidance.</li>
+                <li><b>Technology Selection</b> : Choose your preferred technology stack for project development.</li>
+                <li><b>System Design</b> : Learn System Design of Applications like Netflix, Zomato, Banks, Stock Broker etc.</li>
+                <li><b>Real World Projects</b> : Understand real-world applications and challenges.</li>
+                <li><b>Industry Experts</b> : Learn from Industry Experts with 20+ years of experience.</li>
+                <li><b>Certificate</b> : We provide a certificate upon successful completion of the project.</li>
+                <li><b>Duration</b> : 4 to 6 Months, depending on the application.</li>
+                <li><b>VTU Registered ?</b> : We are working on this.</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <div class="highlight-box">Financial Literacy</div>
+            <div id="stock1" class="stock1">
+              <ul class="stock-list">
+                <li><b>Basics of Economics</b> : Learn the fundamentals of economics and financial principles.</li>
+                <li><b>Govt Functioning</b> : Understand how government functions and its impact on the economy.</li>
+                <li><b>Economic Indicators</b> : Key Concepts of Economic Indicators and their significance.</li>
+                <li><b>Banking System</b> : Know Structure and Functioning of the Banking System.</li>
+                <li><b>Earning & Savings</b> : Earning is mandatory but Savings is Essential.</li>
+                <li><b>Investment Horizons</b> : Investment Opportunities.</li>
+                <li><b>Duration</b> : 2 hours.</li>
+              </ul>
+            </div>
+        </div>
+    </div>
     <!-- Repeat for modal3-6 with your content -->
 
     <script>
+        function openTermsPopup() {
+            const width = 800;
+            const height = 600;
+            const left = (screen.width - width) / 2;
+            const top = (screen.height - height) / 2;
+            window.open('terms.html', 'PrivacyTerms', `width=${width},height=${height},left=${left},top=${top},scrollbars=yes,resizable=yes`);
+        }
+        function openContactUsPopup() {
+            const width = 800;
+            const height = 600;
+            const left = (screen.width - width) / 2;
+            const top = (screen.height - height) / 2;
+            window.open('contactus.html', 'ContactUs', `width=${width},height=${height},left=${left},top=${top},scrollbars=yes,resizable=yes`);
+        }
         function openModal(id) { document.getElementById(id).style.display = 'block'; }
         function closeModal(id) { document.getElementById(id).style.display = 'none'; }
         window.onclick = function(event) { if (event.target.classList.contains('modal')) event.target.style.display = 'none'; }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Iksha Institute</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .contact-item {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #007bff;
+            border-radius: 4px;
+        }
+        .contact-item h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .contact-item p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .contact-item a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        
+        <div class="contact-grid">
+            <div class="contact-item">
+                <h3>📍 Address</h3>
+                <p>Iksha Institute of Technologies<br>
+                Flat G202, Concorde Midway City<br>
+                Bengaluru - 560100</p>
+            </div>
+            
+            <div class="contact-item">
+                <h3>📞 Phone</h3>
+                <p><a href="tel:+91-99009-28972">+91-99009-28972</a></p>
+            </div>
+            
+            <div class="contact-item">
+                <h3>📧 Email</h3>
+                <p><a href="mailto:iksha.institute.of.technologies@gmail.com">iksha.institute.of.technologies@gmail.com</a></p>
+            </div>
+            
+            <div class="contact-item">
+                <h3>🕐 Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 7:00 PM<br>
+                Saturday: 11:00 AM - 6:00 PM<br>
+                Sunday: Closed</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
