@@ -5,31 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Times New Roman', Times, serif;
-            margin: 20px;
+            margin: 0;
+            padding: 20px;
             background-color: #f5f5f5;
         }
         .back-button {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
             margin-bottom: 20px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
+            padding: 12px 24px;
+            background: transparent;
+            color: #007bff;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            min-height: 44px;
+            border: 2px solid #007bff;
+            transform: perspective(600px) rotateY(0deg);
+            box-shadow: -5px 5px 10px rgba(0,123,255,0.3), inset 1px 1px 0 rgba(255,255,255,0.5);
         }
         .back-button:hover {
-            background-color: #0056b3;
+            color: white;
+            background-color: #007bff;
+            transform: perspective(600px) rotateY(-5deg) translateZ(10px);
+            box-shadow: -8px 8px 15px rgba(0,123,255,0.4), inset 1px 1px 0 rgba(255,255,255,0.3);
+        }
+        .back-button:active {
+            transform: perspective(600px) rotateY(-2deg) translateZ(5px) scale(0.98);
+            box-shadow: -3px 3px 8px rgba(0,123,255,0.3);
         }
         .founder-section {
             display: flex;
-            
-            align-items: center;
+            align-items: flex-start;
             gap: 30px;
             margin-bottom: 40px;
             background-color: white;
-            padding: 20px;
+            padding: 25px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
@@ -41,20 +60,109 @@
             height: 250px;
             border-radius: 8px;
             object-fit: cover;
-            border: 3px;
+            border: 3px solid #007bff;
         }
         .founder-content {
             font-size: 17px;
             flex: 1;
+            line-height: 1.6;
         }
         .founder-content h2 {
             color: #007bff;
             margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.5em;
         }
         .founder-content h1 {
             color: #007bff;
-            margin-top: 0;
-            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        .founder-content p {
+            margin-bottom: 12px;
+        }
+        .founder-content ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .founder-content li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            .founder-section {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+                margin-bottom: 30px;
+                align-items: center;
+            }
+            .founder-image {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .founder-image img {
+                width: 200px;
+                height: 200px;
+            }
+            .founder-content {
+                font-size: 16px;
+            }
+            .founder-content h2 {
+                font-size: 1.3em;
+            }
+            .founder-content h1 {
+                font-size: 1.1em;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            .back-button {
+                padding: 10px 16px;
+                font-size: 0.95em;
+                margin-bottom: 15px;
+            }
+            .founder-section {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px;
+                margin-bottom: 20px;
+                border-radius: 6px;
+            }
+            .founder-image img {
+                width: 180px;
+                height: 180px;
+            }
+            .founder-content {
+                font-size: 15px;
+            }
+            .founder-content h2 {
+                font-size: 1.1em;
+                margin-bottom: 10px;
+            }
+            .founder-content h1 {
+                font-size: 1em;
+                margin-top: 15px;
+            }
+            .founder-content p {
+                margin-bottom: 10px;
+                line-height: 1.5;
+            }
+            .founder-content ul {
+                margin-left: 15px;
+                margin-bottom: 12px;
+            }
+            .founder-content li {
+                margin-bottom: 6px;
+                font-size: 0.95em;
+            }
         }
     </style>
 </head>
