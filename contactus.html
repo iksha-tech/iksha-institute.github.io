@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Iksha Institute</title>
     <style>
@@ -11,84 +12,59 @@
             box-sizing: border-box;
         }
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #e3f2fd;
             padding: 20px;
+            text-align: center;
         }
         .container {
-            max-width: 900px;
-            margin: 0 auto;
+            width: 280px;
+            height: 180px;
             background-color: white;
-            padding: 30px;
+            padding: 15px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow-y: auto;
+            margin: 0 auto;
         }
         h1 {
             color: #333;
-            margin-bottom: 30px;
-            text-align: center;
-            font-size: 2em;
+            margin-bottom: 15px;
+            text-align: left;
+            font-size: 1.8em;
         }
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-            margin-bottom: 30px;
+        h3 {
+            padding-top: 8px;
+            text-align: left;
+            font-size: 0.95em;
+            font-weight: normal;
+            margin-bottom: 8px;
         }
-        .contact-item {
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-left: 4px solid #007bff;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-        .contact-item:hover {
-            box-shadow: 0 4px 12px rgba(0,123,255,0.2);
-            transform: translateY(-2px);
-        }
-        .contact-item h3 {
-            color: #007bff;
-            margin-bottom: 12px;
-            font-size: 1.2em;
-        }
-        .contact-item p {
-            color: #555;
-            line-height: 1.6;
-            font-size: 1em;
-        }
-        .contact-item a {
+        a {
             color: #007bff;
             text-decoration: none;
-            padding: 8px 0;
-            display: inline-block;
-            min-height: 44px;
-            min-width: 44px;
-            line-height: 1.4;
         }
-        .contact-item a:hover {
+        a:hover {
             text-decoration: underline;
         }
         @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
             .container {
+                width: 90%;
+                max-width: 350px;
+                max-height: auto;
                 padding: 20px;
             }
             h1 {
                 font-size: 1.5em;
-                margin-bottom: 20px;
+                margin-bottom: 12px;
             }
-            .contact-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 15px;
-                margin-bottom: 20px;
-            }
-            .contact-item {
-                padding: 15px;
-            }
-            .contact-item h3 {
-                font-size: 1em;
-            }
-            .contact-item p {
-                font-size: 0.95em;
+            h3 {
+                font-size: 0.9em;
+                padding-top: 6px;
+                margin-bottom: 6px;
             }
         }
         @media (max-width: 480px) {
@@ -96,66 +72,41 @@
                 padding: 10px;
             }
             .container {
+                width: 95%;
+                max-width: none;
                 padding: 15px;
-                border-radius: 6px;
             }
             h1 {
                 font-size: 1.3em;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
             }
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 12px;
-                margin-bottom: 15px;
-            }
-            .contact-item {
-                padding: 12px;
-                border-left-width: 3px;
-            }
-            .contact-item h3 {
-                font-size: 0.95em;
-                margin-bottom: 8px;
-            }
-            .contact-item p {
-                font-size: 0.9em;
-                line-height: 1.5;
-            }
-            .contact-item a {
-                padding: 6px 0;
-                min-height: 40px;
+            h3 {
+                font-size: 0.85em;
+                padding-top: 5px;
+                margin-bottom: 5px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div >
         <h1>Contact Us</h1>
+        <h3>📍Visit Us</h3>
         
-        <div class="contact-grid">
-            <div class="contact-item">
-                <h3>📍 Address</h3>
-                <p>Iksha Institute of Technologies<br>
-                Flat G202, Concorde Midway City<br>
-                Bengaluru - 560100</p>
-            </div>
-            
-            <div class="contact-item">
-                <h3>📞 Phone</h3>
-                <p><a href="tel:+91-99009-28972">+91-99009-28972</a></p>
-            </div>
-            
-            <div class="contact-item">
-                <h3>📧 Email</h3>
-                <p><a href="mailto:iksha.institute.of.technologies@gmail.com">iksha.institute.of.technologies@gmail.com</a></p>
-            </div>
-            
-            <div class="contact-item">
-                <h3>🕐 Hours</h3>
-                <p>Monday - Friday: 9:00 AM - 7:00 PM<br>
+        <h3>Iksha Institute of Technologies<br>
+                Flat G202, Concorde Midway City<br>Basapura Village Road<br>
+                Bengaluru - 560100
+        </h3>
+
+        <h3>📞Call Us:<a href="tel:+91-99009-28972">+91-99009-28972</a></h3>
+        <h3>📞WhatsApp:<a href="tel:+91-99009-28972">+91-99009-28972</a></h3>
+        
+        <h3>🕐 Working Hours</h3>
+                <h3>Monday - Friday: 9:00 AM - 7:00 PM<br>
                 Saturday: 11:00 AM - 6:00 PM<br>
-                Sunday: Closed</p>
-            </div>
-        </div>
+                Sunday: Closed</h3>
+        <h3>📧 Email Us: <a href="mailto:iksha.institute.of.technologies@gmail.com">iksha.institute.of.technologies@gmail.com</a></h3>
+        
     </div>
 </body>
 </html>

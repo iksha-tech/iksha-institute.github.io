@@ -9,9 +9,10 @@
         @import url(http://fonts.googleapis.com/earlyaccess/notosanskannada.css);
         body {
             font-family: "Noto Sans Kannada", sans-serif;
+            
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        html, body { height: 100%; font-family: Arial, sans-serif; }
+        html, body { height: 100%; font-family: 'Times New Roman', Times, serif }
         body { display: flex; flex-direction: column; }
 
         .header { height: 18vh; background: black; display: flex; align-items: center; justify-content: space-between; padding: 0 5%; color: white; flex-wrap: wrap; }
@@ -20,7 +21,7 @@
         nav ul { display: flex; list-style: none; gap: 2em; flex-wrap: wrap; }
         nav a { color: white; text-decoration: none; font-weight: bold; padding: 8px; }
 
-        .main { flex: 1; height: 74vh; display: grid; grid-template-rows: 1fr; padding: 2%; background: #f8f9fa; }
+        .main { flex: 1; height: 74vh; display: grid; grid-template-rows: 1fr; padding: 2%; background-color: #e3f2fd; }
         @media (max-width: 768px) {
             .main { height: auto; min-height: auto; }
         }
@@ -434,7 +435,7 @@
         <nav>
             <ul>
                 <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="#mission">Mission</a></li>
+                <li><a href="mission.html">Mission</a></li>
             </ul>
         </nav>
     </header>
@@ -477,6 +478,7 @@
     </main>
 
     <footer class="footer">
+      <span>&copy; 2025 iksha institute of technologies, All Rights Reserved.</span>
         <span><a href="#" onclick="openTermsPopup(); return false;" style="color: #667eea; text-decoration: none; cursor: pointer;">Privacy & Terms</a></span>
         <span><a href="#" onclick="openContactUsPopup(); return false;" style="color: #667eea; text-decoration: none; cursor: pointer;">Contact Us</a></span>
         <!-- <span>Contact: iksha.institute.of.technologies@gmail.com | +91 99009 28972</span>
