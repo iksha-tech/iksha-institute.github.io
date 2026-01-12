@@ -15,7 +15,7 @@
             font-family: 'Times New Roman', Times, serif;
             background-color: #e3f2fd;
             padding: 20px;
-            text-align: center;
+            
         }
         .container {
             width: 280px;
@@ -47,6 +47,31 @@
         a:hover {
             text-decoration: underline;
         }
+        .back-button {
+            display: inline-flex;
+            align-items:flex-start;
+            margin-bottom: 20px;
+            padding: 12px 24px;
+            background: transparent;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: normal;
+            transition: all 0.3s ease;
+            min-height: 44px;
+            border: 2px;
+            transform: perspective(600px) rotateY(0deg);
+            box-shadow: -5px 5px 10px rgba(0,123,255,0.3), inset 1px 1px 0 rgba(255,255,255,0.5);
+        }
+        .back-button:hover {
+            color: white;
+            background-color: #007bff;
+            transform: perspective(600px) rotateY(-5deg) translateZ(10px);
+            box-shadow: -8px 8px 15px rgba(0,123,255,0.4), inset 1px 1px 0 rgba(255,255,255,0.3);
+        }
+        .back-button:active {
+            transform: perspective(600px) rotateY(-2deg) translateZ(5px) scale(0.98);
+            box-shadow: -3px 3px 8px rgba(0,123,255,0.3);
+        }
         @media (max-width: 768px) {
             body {
                 padding: 15px;
@@ -76,6 +101,11 @@
                 max-width: none;
                 padding: 15px;
             }
+            .back-button {
+                padding: 10px 16px;
+                font-size: 0.95em;
+                margin-bottom: 15px;
+            }
             h1 {
                 font-size: 1.3em;
                 margin-bottom: 10px;
@@ -86,10 +116,13 @@
                 margin-bottom: 5px;
             }
         }
+        
     </style>
 </head>
 <body>
+    <a href="http://iksha-institute.com/index.html" class="back-button">Home</a>
     <div >
+        
         <h1>Contact Us</h1>
         <h3>📍Visit Us</h3>
         
