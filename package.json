@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "manual-deploy": "npm run build && echo iksha-institute.com > dist/CNAME && cd dist && git init && git add . && git commit -m deploy && git remote add origin https://github.com/iksha-tech/iksha-institute.github.io.git && git push origin --force HEAD:gh-pages"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.18",
