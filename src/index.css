@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    --color-dark-gray-50: #f9fafb;
+    --color-dark-gray-100: #f3f4f6;
+    --color-dark-gray-200: #e5e7eb;
+    --color-dark-gray-300: #d1d5db;
+    --color-dark-gray-400: #9ca3af;
+    --color-dark-gray-500: #6b7280;
+    --color-dark-gray-600: #4b5563;
+    --color-dark-gray-700: #374151;
+    --color-dark-gray-800: #1f2937;
+    --color-dark-gray-900: #111827;
+  }
+
+  body {
+    @apply bg-[#111827] text-[#f3f4f6];
+  }
+}
