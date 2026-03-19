@@ -155,7 +155,7 @@ export default function Programs() {
             <div className="p-8">
               <div className="flex justify-between items-start mb-6">
                 <div>
-                  <div className="text-6xl mb-4">{selectedCourse.icon}</div>
+                  <div className="text-4xl mb-4">{selectedCourse.icon}</div>
                   <h2 className="text-4xl font-bold text-black">{selectedCourse.title}</h2>
                 </div>
                 <button
@@ -166,7 +166,7 @@ export default function Programs() {
                 </button>
               </div>
 
-              <p className="text-[#D84C00] font-semibold text-xl mb-4">{selectedCourse.description}</p>
+              <p className="text-[#D84C00] font-semibold text-lg mb-4">{selectedCourse.description}</p>
               <p className="text-gray-600 text-lg mb-8">{selectedCourse.details}</p>
 
               {selectedCourse.title === "SDLC Course" && (

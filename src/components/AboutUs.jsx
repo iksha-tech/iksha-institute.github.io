@@ -49,7 +49,7 @@ export default function AboutUs() {
                 <img
                   src="/profile-pic.png"
                   alt="Avinash THM profile picture"
-                  className="w-40 h-40 md:w-56 md:h-56 object-cover rounded-2xl border-2 border-[black] shadow-lg"
+                  className="w-40 h-40 md:w-56 md:h-56 object-cover rounded-2xl border-2 border-[black] shadow-xl/90"
                 />
               </div>
             </div>
