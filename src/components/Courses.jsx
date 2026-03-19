@@ -94,7 +94,7 @@ export default function Programs() {
   };
 
   return (
-    <section id="courses" className="bg-[#f0f2f5] py-6 px-4 sm:px- lg:px-30 scroll-mt-28 w-full">
+    <section id="courses" className="bg-[#f0f2f5] py-6 px-4 sm:px-6 lg:px-30 scroll-mt-28 w-full">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-black mb-6 text-center">Our Courses</h2>
         <div className="space-y-4">

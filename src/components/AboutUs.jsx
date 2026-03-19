@@ -8,36 +8,51 @@ export default function AboutUs() {
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-[#D84C00] mb-8">About The Founder</h3>
 
-          {/* Intro highlight card */}
+          {/* Intro highlight card with profile image */}
           <div className="bg-white border-l-4 border-[#D84C00] rounded-r-2xl shadow-md px-6 py-5 mb-8">
-            <p className="text-lg text-[#1f2937] leading-relaxed">
-              <span className="text-[#D84C00] font-bold">iksha institute of technologies</span> was born
-              from a passion — a Passion for Teaching with Impactful Education, backed by{" "}
-              <span className="font-semibold text-[#1f2937]">20+ Years of Experience</span>.
-            </p>
-            {/* Founder detail */}
-            <p className="text-lg text-[#1f2937] leading-relaxed">
-              Our founder,{" "}
-              <span className="text-[#D84C00] font-bold">Avinash THM</span>, having contibuted 
-              in <span className="font-semibold">leading Tech Companies</span>, brings
-              unmatched real-world expertise into every aspect of your curriculum.
-            </p>
-            {/* Mission */}
-            <p className="text-lg text-[#1f2937] leading-relaxed">
-              Today, he channels that experience into creating{" "}
-              <span className="font-semibold">Innovative, Industry-aligned Learning Experiences</span>{" "}
-              that prepare students for the real world.
-            </p>
-            {/* Proverb / M.Tech */}
-            <p className="text-lg text-[#1f2937] leading-relaxed">
-              And true to the proverb{" "}
-              <span className="italic text-[#D84C00] font-medium">"Learning Never Ends"</span>, Avinash
-              continues his own journey with {" "}
-              <span className="font-semibold text-[#D84C00]">
-                M.Tech in Data Science and Machine Learning
-              </span>
-              
-            </p>
+            <div className="flex flex-col md:flex-row items-center md:items-stretch gap-8">
+              {/* Text Section */}
+              <div className="flex-1 flex flex-col justify-center">
+                <p className="text-lg text-[#1f2937] leading-relaxed">
+                  <span className="text-[#D84C00] font-bold">iksha institute of technologies</span> was born
+                  from a passion — a Passion for Teaching with Impactful Education.
+                </p>
+                <p className="text-lg text-[#1f2937] leading-relaxed">
+                  Backed by{" "}
+                  <span className="font-semibold text-[#1f2937]">20+ Years of Experience</span>.
+                  </p>
+                {/* Founder detail */}
+                <p className="text-lg text-[#1f2937] leading-relaxed">
+                  Our founder,{" "}
+                  <span className="text-[#D84C00] font-bold">Avinash THM</span>, having contibuted 
+                  in <span className="font-semibold">leading Tech Companies</span>, brings
+                  unmatched real-world expertise.
+                </p>
+                {/* Mission */}
+                <p className="text-lg text-[#1f2937] leading-relaxed">
+                  Today, he channels that experience into creating{" "}
+                  <span className="font-semibold">Innovative, Industry-aligned Learning Experiences</span>{" "}
+                  that prepare students for the real world.
+                </p>
+                {/* Proverb / M.Tech */}
+                <p className="text-lg text-[#1f2937] leading-relaxed">
+                  And true to the proverb{" "}
+                  <span className="italic text-[#D84C00] font-medium">"Learning Never Ends"</span>, Avinash
+                  continues his own journey with {" "}
+                  <span className="font-semibold text-[#D84C00]">
+                    M.Tech in Data Science and Machine Learning
+                  </span>
+                </p>
+              </div>
+              {/* Profile Image Section */}
+              <div className="flex-shrink-0 flex justify-center items-center md:items-start">
+                <img
+                  src="/profile-pic.png"
+                  alt="Avinash THM profile picture"
+                  className="w-40 h-40 md:w-56 md:h-56 object-cover rounded-2xl border-2 border-[black] shadow-lg"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Closing statement */}
