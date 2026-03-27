@@ -43,6 +43,18 @@ export default function AboutUs() {
                     M.Tech in Data Science and Machine Learning
                   </span>
                 </p>
+                <p className="text-lg text-[#1f2937] leading-relaxed"> <br/>
+                  Connect With Avinash:&nbsp;&nbsp;               
+                  <a
+                    href="https://www.linkedin.com/in/avinash-thm-3961a44/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 rounded-lg border border-gray-300 hover:border-[#D84C00] hover:text-[#D84C00] transition text-sm font-semibold"
+                  >
+                    LinkedIn
+                  </a>
+                
+                </p>
               </div>
               {/* Profile Image Section */}
               <div className="flex-shrink-0 flex justify-center items-center md:items-start">
@@ -86,31 +98,35 @@ export default function AboutUs() {
           <p className="text-lg text-[#1f2937] mb-4">The Team brings in vast experience working in:</p>
 
           <div className="space-y-4">
-            <div className="bg-gray-100 p-6 rounded-lg border-l-4 border-[#D84C00] flex items-start gap-4 hover:bg-gray-200 transition">
-              <div className="text-3xl flex-shrink-0">🏗️</div> <h4 className="text-[#1f2937] font-bold text-lg mb-2">System Design & Architecture : Enterprise systems that handle millions of transactions securely</h4>
-            
+            <div className="bg-gray-100 p-6 rounded-lg border-l-4 border-[#D84C00] hover:bg-gray-200 transition">
+              <div className="flex items-start gap-4 flex-wrap">
+                <div className="flex items-left gap-2 mb-2">
+                  <span className="text-3xl">🏗️</span>
+                  <span className="text-[#1f2937] font-bold text-lg">System Design & Architecture: Enterprise systems that handle millions of transactions securely</span>
+                </div>
+                <div className="flex items-left gap-2 mb-2">
+                  <span className="text-3xl">⚡</span>
+                  <span className="text-[#1f2937] font-bold text-lg">High Performance Applications: Optimized systems for speed and efficiency</span>
+                </div>
+                <div className="flex items-left gap-2 mb-2">
+                  <span className="text-3xl">🔒</span>
+                  <span className="text-[#1f2937] font-bold text-lg">Security & Compliance: Building secure applications that meet industry standards</span>
+                </div>
+                <div className="flex items-left gap-2 mb-2">
+                  <span className="text-3xl">🛡️</span>
+                  <span className="text-[#1f2937] font-bold text-lg">Reliable & Scalable Solutions: Systems that run round the glow without any perforamce degradation</span>
+                </div>
+                <div className="flex items-left gap-2 mb-2">
+                  <span className="text-3xl">⏱️</span>
+                  <span className="text-[#1f2937] font-bold text-lg">Time Critical Applications: Mission-critical systems with strict deadlines with customer base across regions</span>
+                </div>
+                <div className="flex items-left gap-2 mb-2">
+                  <span className="text-3xl">👥</span>
+                  <span className="text-[#1f2937] font-bold text-lg">Customer First Environments: Solutions centered on user experience</span>
+                </div>
+              </div>
+              
             </div>
-            <div className="bg-gray-100 p-6 rounded-lg border-l-4 border-[#D84C00] flex items-start gap-4 hover:bg-gray-200 transition">
-              <div className="text-3xl flex-shrink-0">⚡</div> <h4 className="text-[#1f2937] font-bold text-lg mb-2">High Performance Applications: Optimized systems for speed and efficiency</h4>
-            </div>
-
-            <div className="bg-gray-100 p-6 rounded-lg border-l-4 border-[#D84C00] flex items-start gap-4 hover:bg-gray-200 transition">
-              <div className="text-3xl flex-shrink-0">🔒</div> <h4 className="text-[#1f2937] font-bold text-lg mb-2">Security & Compliance: Building secure applications that meet industry standards</h4>
-            </div>
-
-            <div className="bg-gray-100 p-6 rounded-lg border-l-4 border-[#D84C00] flex items-start gap-4 hover:bg-gray-200 transition">
-              <div className="text-3xl flex-shrink-0">🛡️</div> <h4 className="text-[#1f2937] font-bold text-lg mb-2">Reliable & Scalable Solutions: Robust systems that grow with your business</h4>
-            </div>
-
-            <div className="bg-gray-100 p-6 rounded-lg border-l-4 border-[#D84C00] flex items-start gap-4 hover:bg-gray-200 transition">
-              <div className="text-3xl flex-shrink-0">⏱️</div> <h4 className="text-[#1f2937] font-bold text-lg mb-2">Time Critical Applications: Mission-critical systems with strict deadlines</h4>
-            </div>
-
-            <div className="bg-gray-100 p-6 rounded-lg border-l-4 border-[#D84C00] flex items-start gap-4 hover:bg-gray-200 transition">
-              <div className="text-3xl flex-shrink-0">👥</div> <h4 className="text-[#1f2937] font-bold text-lg mb-2">Customer First Environments: Solutions centered on user experience</h4>
-            </div>
-
-            
           </div>
           
         </div>
