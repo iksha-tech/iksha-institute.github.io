@@ -4,6 +4,15 @@ export default function Programs() {
 
   
   const courseCategories = {
+    "Career Guidance": [
+      {
+        title: "Vidya Margadarshi",
+        description: "A Web based Career Guidance Application for Students",
+        details: "Professional Courses, Colleges, Career Path for 10th grade students, Interaction with Professionals",
+        icon: "💻",
+        hasModal: true
+      }
+    ],
     "Courses for Computer Science Students": [
       {
         title: "SDLC Course",
@@ -263,6 +272,37 @@ export default function Programs() {
                 </div>
               )}
 
+              {selectedCourse.title === "Vidya Margadarshi" && (
+                <div>
+                  <h3>Visit <a href="https://vidya-margadarshi.com">Vidya Margadarshi</a></h3>
+                  <div className="space-y-3">
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <p className="text-black font-semibold">Visit <a href="https://vidya-margadarshi.com">Vidya Margadarshi</a></p>
+                    </div>
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <p className="text-black font-semibold">Professional Colleges</p>
+                      <p className="text-gray-700 text-sm mt-2">Find Engineering, Medical, Architecture Colleges in Karnataka.</p>
+                    </div>
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <p className="text-black font-semibold">Courses</p>
+                      <p className="text-gray-700 text-sm mt-2">Get to know the Courses available in each college.</p>
+                    </div>
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <p className="text-black font-semibold">Entrance Exam Dates</p>
+                      <p className="text-gray-700 text-sm mt-2">Entrance exam date announcements available.</p>
+                    </div>
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <p className="text-black font-semibold">Career Path</p>
+                      <p className="text-gray-700 text-sm mt-2">Explore various career opportunities according to courses right from 10th grade.</p>
+                      <p className="text-gray-700 text-sm mt-2">Identify the path based on Science, Commerce, Arts or Humanities stream.</p>
+                    </div>
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <p className="text-black font-semibold">Global Search</p>
+                      <p className="text-gray-700 text-sm mt-2">Various options to search from - Place, College, Course, Rank.</p>
+                    </div>
+                  </div>
+                </div>
+              )}
 
               {selectedCourse.title === "AI / ML Bootcamp" && (
                 <div>
