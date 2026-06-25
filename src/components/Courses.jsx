@@ -20,10 +20,42 @@ export default function Programs() {
         hasModal: true
       },
       {
+        title: "AI / ML Bootcamp",
+        description: "Get started with AI and Machine Learning",
+        details: "Foundational Machine Learning Course for Beginners",
+        icon: "🎓",
+        hasModal: true
+      },
+      {
         title: "Project on AI / ML",
         description: "Machine Learning along with a Project",
         details: "Foundational Machine Learning Course",
         icon: "🎓",
+        hasModal: true
+      }
+    ],
+    "Workshops for Engineering Students": [
+      {
+        title: "Career Readiness workshops",
+        description: "Interviews, Resumes, Communication skills",
+        details: "Preparation for your BIG leap into the Industry with Interview preparation, resume reviews, communication skills, and role-based learning tracks",
+        icon: "🧘",
+        hasModal: true
+      },
+      {
+        title: "Campus Podcast Series",
+        description: "Hear it out from the Experts",
+        details: "Curated conversations with founders, leaders, and practitioners to expose students to real industry journeys.",
+        icon: "🧘‍♀️",
+        hasModal: true
+      }
+    ],
+    "Software Development": [
+      {
+        title: "Complete Software Development",
+        description: "Web Application, Mobile, Cloud, AI",
+        details: "Get a Software developed, deployed and maintained by our team",
+        icon: "🧘",
         hasModal: true
       }
     ],
@@ -42,23 +74,8 @@ export default function Programs() {
         icon: "💰",
         hasModal: true
       }
-    ],
-    "Wellness Courses for Corporates": [
-      {
-        title: "Yoga for Beginners",
-        description: "Start your yoga journey",
-        details: "Learn basic poses and breathing techniques",
-        icon: "🧘",
-        hasModal: true
-      },
-      {
-        title: "Advanced Yoga",
-        description: "Deepen your practice",
-        details: "Advanced poses and meditation",
-        icon: "🧘‍♀️",
-        hasModal: true
-      }
     ]
+    
   };
 
   const [selectedCourse, setSelectedCourse] = useState(null);
@@ -96,7 +113,7 @@ export default function Programs() {
   return (
     <section id="courses" className="bg-[#f0f2f5] py-6 px-4 sm:px-6 lg:px-30 scroll-mt-28 w-full">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-black mb-6 text-center">Our Courses</h2>
+        <h2 className="text-3xl font-bold text-black mb-6 text-center">Our Services</h2>
         <div className="space-y-4">
           {Object.entries(courseCategories).map(([category, courses]) => (
             <div key={category} className="bg-white rounded-lg border border-gray-200 overflow-hidden">
@@ -246,6 +263,41 @@ export default function Programs() {
                 </div>
               )}
 
+
+              {selectedCourse.title === "AI / ML Bootcamp" && (
+                <div>
+                  {/* <div className="mb-8 p-4 bg-gray-100 rounded border-l-4 border-[#D84C00]">
+                    <p className="text-black text-lg font-semibold">AI / ML Bootcamp</p>
+                    <p className="text-[#D84C00] mt-2 font-semibold">Foundational Course for Artificial Intelligence and Machine Learning</p>
+                  </div> */}
+
+                  <div className="space-y-3">
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <p className="text-black font-semibold">📋 Basics of AI / ML</p>
+                      <p className="text-gray-700 text-sm mt-2">Learn how it all started and what it entails.</p>
+                    </div>
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <p className="text-black font-semibold">🔄 Paradigms of AI / ML</p>
+                      <p className="text-gray-700 text-sm mt-2">Understand different approaches and methodologies in AI and ML.</p>
+                    </div>
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <p className="text-black font-semibold">✅ Should I use AI / ML</p>
+                      <p className="text-gray-700 text-sm mt-2">Get to know when to use and when NOT to use AI / ML.</p>
+                    </div>
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <p className="text-black font-semibold">🛠️ Technologies used to develop AI / ML Applications</p>
+                      <p className="text-gray-700 text-sm mt-2">There are varieties of technologies available for developing AI and ML applications. Know them</p>
+                    </div>
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <p className="text-black font-semibold">🌍 Real World Projects</p>
+                      <p className="text-gray-700 text-sm mt-2">Familiarize with real-world AI / ML applications.</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+
+
               {selectedCourse.title === "Internship" && (
                 <div>
                   <div className="mb-8 p-4 bg-gray-100 rounded border-l-4 border-[#D84C00]">
@@ -373,6 +425,36 @@ export default function Programs() {
                   </div>
                 </div>
               )}
+
+              {selectedCourse.title === "Complete Software Development" && (
+                <div>
+                  <div className="space-y-4 mb-8">
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <p className="text-black font-semibold">📚 End-to-End Modern Architecture</p>
+                      <p className="text-gray-700 text-sm mt-2">We engineer scalable web applications, native mobile apps, native cloud architectures, and intelligence-driven AI solutions tailored to complex business requirements.</p>
+                    </div>
+                    
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <p className="text-black font-semibold">Continuous Integration & Delivery (CI/CD)</p>
+                      <p className="text-gray-700 text-sm mt-2">Our automated deployment pipelines ensure rapid, secure, and zero-downtime software releases with rigorous quality assurance testing.</p>
+                    </div>
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <p className="text-black font-semibold">Proactive Performance Maintenance</p>
+                      <p className="text-gray-700 text-sm mt-2">We provide 24/7 system monitoring, immediate bug mitigation, software patching, and API updates to guarantee maximum platform availability.</p>
+                    </div>
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <p className="text-black font-semibold">Cloud Infrastructure Optimization</p>
+                      <p className="text-gray-700 text-sm mt-2">We orchestrate and manage secure cloud computing environments on AWS, Azure, or GCP to lower operational overhead and maximize performance efficiency.</p>
+                    </div>
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <p className="text-black font-semibold">Scalable AI & Data Integration</p>
+                      <p className="text-gray-700 text-sm mt-2">Our engineering teams integrate advanced machine learning models, custom APIs, and secure database solutions into your existing technical ecosystem.</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+
 
               {selectedCourse.title === "Capital Markets Mastery" && (
                 <div>
@@ -567,73 +649,59 @@ export default function Programs() {
                 </div>
               )}
 
-              {selectedCourse.title === "Yoga for Beginners" && (
+              {selectedCourse.title === "Career Readiness workshops" && (
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-6">Course Overview</h3>
-                  <div className="mb-8 p-4 bg-gray-100 rounded border-l-4 border-[#D84C00]">
-                    <p className="text-[#D84C00] text-lg font-semibold flex items-center gap-2">🧘 Start Your Yoga Journey</p>
-                    <p className="text-gray-700 mt-2">Perfect for beginners looking to improve flexibility, strength, and mental well-being.</p>
-                  </div>
-
+                  <h3 className="text-2xl font-bold text-black mb-6">Career readiness workshops</h3>
                   <h3 className="text-2xl font-bold text-black mb-6">What You'll Learn</h3>
                   <div className="space-y-4 mb-8">
                     <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
-                      <h4 className="text-black font-semibold flex items-center gap-2">🌬️ Breathing Techniques</h4>
-                      <p className="text-gray-700 text-sm mt-2">Learn Pranayama and basic breathing exercises for relaxation.</p>
+                      <h4 className="text-black font-semibold flex items-center gap-2">Industry-Aligned Skill Assessment</h4>
+                      <p className="text-gray-700 text-sm mt-2">Evaluates current student capabilities against real-world engineering job requirements.</p>
                     </div>
                     <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
-                      <h4 className="text-black font-semibold flex items-center gap-2">🧘 Basic Poses</h4>
-                      <p className="text-gray-700 text-sm mt-2">Master fundamental asanas like Mountain Pose, Tree Pose, and Downward Dog.</p>
+                      <h4 className="text-black font-semibold flex items-center gap-2">Resume & Portfolio Engineering</h4>
+                      <p className="text-gray-700 text-sm mt-2">Guides students in building technical portfolios that stand out to top recruiters.</p>
                     </div>
                     <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
-                      <h4 className="text-black font-semibold flex items-center gap-2">🧘‍♀️ Meditation Basics</h4>
-                      <p className="text-gray-700 text-sm mt-2">Introduction to mindfulness and simple meditation practices.</p>
+                      <h4 className="text-black font-semibold flex items-center gap-2">Mock Interviews & Feedback</h4>
+                      <p className="text-gray-700 text-sm mt-2">Provides realistic interview simulations with direct feedback from experienced industry professionals.</p>
                     </div>
-                  </div>
 
-                  <div className="bg-gray-100 p-6 rounded border border-[#D84C00]">
-                    <div className="flex items-center gap-3">
-                      <span className="text-3xl">⏱️</span>
-                      <div>
-                        <p className="text-black font-semibold text-lg">Duration</p>
-                        <p className="text-[#D84C00] font-semibold">4 weeks</p>
-                      </div>
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <h4 className="text-black font-semibold flex items-center gap-2">Corporate Navigation Skills</h4>
+                      <p className="text-gray-700 text-sm mt-2">Teaches essential workplace communication, professional ethics, and teamwork dynamics.</p>
+                    </div>
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <h4 className="text-black font-semibold flex items-center gap-2">Job Search Strategy</h4>
+                      <p className="text-gray-700 text-sm mt-2">Equips students with networking techniques and LinkedIn optimization strategies for hidden opportunities.</p>
                     </div>
                   </div>
                 </div>
               )}
 
-              {selectedCourse.title === "Advanced Yoga" && (
+              {selectedCourse.title === "Campus Podcast Series" && (
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-6">Course Overview</h3>
-                  <div className="mb-8 p-4 bg-gray-100 rounded border-l-4 border-[#D84C00]">
-                    <p className="text-[#D84C00] text-lg font-semibold flex items-center gap-2">🧘‍♀️ Deepen Your Practice</p>
-                    <p className="text-gray-700 mt-2">Advanced techniques for experienced practitioners seeking deeper spiritual and physical growth.</p>
-                  </div>
-
                   <h3 className="text-2xl font-bold text-black mb-6">Advanced Modules</h3>
                   <div className="space-y-4 mb-8">
                     <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
-                      <h4 className="text-black font-semibold flex items-center gap-2">🔥 Advanced Asanas</h4>
-                      <p className="text-gray-700 text-sm mt-2">Master complex poses like Crow Pose, Headstand, and Lotus variations.</p>
+                      <h4 className="text-black font-semibold flex items-center gap-2">End-to-End Production Training</h4>
+                      <p className="text-gray-700 text-sm mt-2">Covers the entire workflow from initial concept and scriptwriting to final audio editing.</p>
                     </div>
                     <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
-                      <h4 className="text-black font-semibold flex items-center gap-2">🧠 Deep Meditation</h4>
-                      <p className="text-gray-700 text-sm mt-2">Advanced meditation techniques including chakra balancing and transcendental meditation.</p>
+                      <h4 className="text-black font-semibold flex items-center gap-2">Institutional Brand Amplification</h4>
+                      <p className="text-gray-700 text-sm mt-2">Establishes a professional media asset to highlight campus achievements, research, and alumni success.</p>
                     </div>
                     <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
-                      <h4 className="text-black font-semibold flex items-center gap-2">🌿 Yoga Philosophy</h4>
-                      <p className="text-gray-700 text-sm mt-2">Explore the deeper meanings of yoga through ancient texts and modern interpretations.</p>
+                      <h4 className="text-black font-semibold flex items-center gap-2">Communication Skill Development</h4>
+                      <p className="text-gray-700 text-sm mt-2">Enhances student confidence, public speaking, active listening, and professional interviewing techniques.</p>
                     </div>
-                  </div>
-
-                  <div className="bg-gray-100 p-6 rounded border border-[#D84C00]">
-                    <div className="flex items-center gap-3">
-                      <span className="text-3xl">⏱️</span>
-                      <div>
-                        <p className="text-black font-semibold text-lg">Duration</p>
-                        <p className="text-[#D84C00] font-semibold">8 weeks</p>
-                      </div>
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <h4 className="text-black font-semibold flex items-center gap-2">Technical Setup Mastering</h4>
+                      <p className="text-gray-700 text-sm mt-2">Provides hands-on experience with industry-standard audio hardware and digital editing software.</p>
+                    </div>
+                    <div className="bg-gray-100 p-4 rounded border-l-4 border-[#D84C00]">
+                      <h4 className="text-black font-semibold flex items-center gap-2">Distribution & Growth Strategy</h4>
+                      <p className="text-gray-700 text-sm mt-2">Teaches students how to launch, market, and sustain a podcast on major streaming platforms.</p>
                     </div>
                   </div>
                 </div>

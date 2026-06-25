@@ -18,7 +18,7 @@ export default function Welcome() {
         <span>
           
           <span className="blinking-colorful">
-            Launching soon Vidya Margadarshi !!!{'  '}
+            <a href="https://vidya-margadarshi.com">Vidya Margadarshi in now live</a>
           </span>
           {/* Enroll to have an immersive hands-on experience at iksha institute of technologies. */}
         </span>
